@@ -24,6 +24,7 @@ export const profile: Profile = {
 
   rotatingRoles: [
     { es: "Desarrollador Full Stack", en: "Full Stack Developer" },
+    { es: "Datos y Automatización con IA", en: "Data & AI Automation" },
     { es: "Fundador de KoW Development", en: "Founder of KoW Development" },
     { es: "Ingeniería de Sistemas · UPN", en: "Systems Engineering · UPN" },
   ],
@@ -94,6 +95,21 @@ export const profile: Profile = {
 
   skillCategories: [
     {
+      id: "data",
+      icon: "database",
+      name: { es: "Datos e IA", en: "Data & AI" },
+      skills: [
+        { name: "SQL", proficiency: 88 },
+        { name: "SQL Server", proficiency: 85 },
+        { name: "MySQL", proficiency: 78 },
+        { name: "Pandas / NumPy", proficiency: 78 },
+        { name: "Google Colab (GPU)", proficiency: 80 },
+        { name: "YOLOv11 / Ultralytics", proficiency: 80 },
+        { name: "Power BI", proficiency: 70 },
+        { name: "Excel", proficiency: 75 },
+      ],
+    },
+    {
       id: "backend",
       icon: "backend",
       name: { es: "Backend", en: "Backend" },
@@ -118,25 +134,26 @@ export const profile: Profile = {
       ],
     },
     {
-      id: "data",
-      icon: "database",
-      name: { es: "Datos", en: "Data" },
+      id: "networking",
+      icon: "networking",
+      name: { es: "Redes", en: "Networking" },
       skills: [
-        { name: "SQL", proficiency: 88 },
-        { name: "SQL Server", proficiency: 85 },
-        { name: "MySQL", proficiency: 78 },
-        { name: "Power BI", proficiency: 70 },
-        { name: "Google Colab", proficiency: 72 },
+        { name: "TCP/IP", proficiency: 82 },
+        { name: "Routing & Switching (CCNA)", proficiency: 80 },
+        { name: "Cisco Packet Tracer", proficiency: 80 },
+        { name: "Wireless / WLAN", proficiency: 75 },
+        { name: "LoRa / ESP32", proficiency: 72 },
       ],
     },
     {
       id: "tooling",
       icon: "tooling",
-      name: { es: "Herramientas", en: "Tooling" },
+      name: { es: "Herramientas y Automatización", en: "Tooling & Automation" },
       skills: [
         { name: "Git", proficiency: 85 },
         { name: "Firebase", proficiency: 75 },
         { name: "VS Code", proficiency: 90 },
+        { name: "Roboflow", proficiency: 80 },
         { name: "n8n", proficiency: 70 },
         { name: "Web Scraping", proficiency: 75 },
       ],
@@ -232,10 +249,16 @@ export const profile: Profile = {
           es: "El calibre se infiere del tamaño aparente a distancia de captura controlada, por lo que la resolución de inferencia funciona como parámetro de calibración, no como ajuste de rendimiento",
           en: "Fruit size is inferred from apparent size at a controlled capture distance, so inference resolution acts as a calibration parameter, not a performance setting",
         },
+        {
+          es: "Dataset propio de paltas etiquetado en Roboflow y modelo entrenado sobre GPU en Google Colab y en clúster de cómputo",
+          en: "Own avocado dataset labeled in Roboflow, with the model trained on GPU in Google Colab and on a compute cluster",
+        },
       ],
       technologies: [
         "YOLOv11",
+        "Roboflow",
         "BoT-SORT",
+        "Google Colab",
         "Python",
         "FastAPI",
         "React",

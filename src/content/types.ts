@@ -14,7 +14,13 @@ export interface Skill {
   proficiency: number;
 }
 
-export type SkillCategoryIcon = "frontend" | "backend" | "database" | "devops" | "tooling";
+export type SkillCategoryIcon =
+  | "frontend"
+  | "backend"
+  | "database"
+  | "devops"
+  | "networking"
+  | "tooling";
 
 export interface SkillCategory {
   id: string;

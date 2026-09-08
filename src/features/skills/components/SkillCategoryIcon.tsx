@@ -1,4 +1,4 @@
-import { Cloud, Database, Layers, Server, Wrench } from "lucide-react";
+import { Cloud, Database, Layers, Network, Server, Wrench } from "lucide-react";
 import type { SkillCategoryIcon as SkillCategoryIconName } from "@/content/types";
 
 const CATEGORY_ICONS = {
@@ -6,6 +6,7 @@ const CATEGORY_ICONS = {
   backend: Server,
   database: Database,
   devops: Cloud,
+  networking: Network,
   tooling: Wrench,
 } as const satisfies Record<SkillCategoryIconName, unknown>;
 
