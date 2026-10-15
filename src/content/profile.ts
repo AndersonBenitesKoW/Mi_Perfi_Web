@@ -44,7 +44,7 @@ export const profile: Profile = {
     en: "Open to new opportunities",
   },
 
-  email: "andersonbenitesy@gmail.com",
+  email: "salinaspliegoanderson@gmail.com",
 
   resumeUrl: "/CV-Anderson-Benites-Yupanqui.pdf",
 
@@ -83,8 +83,8 @@ export const profile: Profile = {
     },
     {
       platform: "email",
-      label: "andersonbenitesy@gmail.com",
-      url: "mailto:andersonbenitesy@gmail.com",
+      label: "salinaspliegoanderson@gmail.com",
+      url: "mailto:salinaspliegoanderson@gmail.com",
     },
     {
       platform: "whatsapp",

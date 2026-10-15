@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Download, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { profile } from "@/content/profile";
 import { uiCopy } from "@/content/ui-copy";
 import { useTranslate } from "@/i18n/LanguageProvider";
@@ -74,11 +74,11 @@ export function SiteHeader() {
 
           <ActionLink
             href={profile.resumeUrl}
-            download
             variant="secondary"
             className="hidden whitespace-nowrap px-4 py-2 text-xs lg:inline-flex"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Download className="size-4" aria-hidden />
             {translate(uiCopy.hero.resumeAction)}
           </ActionLink>
 

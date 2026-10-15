@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Download, MapPin, Sparkles } from "lucide-react";
+import { ArrowRight, MapPin, Sparkles } from "lucide-react";
 import { profile } from "@/content/profile";
 import { uiCopy } from "@/content/ui-copy";
 import { useTranslate } from "@/i18n/LanguageProvider";
@@ -62,8 +62,7 @@ export function HeroSection() {
           <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden />
         </ActionLink>
 
-        <ActionLink href={profile.resumeUrl} download variant="ghost">
-          <Download className="size-4" aria-hidden />
+        <ActionLink href={profile.resumeUrl} variant="ghost" target="_blank" rel="noopener noreferrer">
           {translate(uiCopy.hero.resumeAction)}
         </ActionLink>
       </RevealOnScroll>

@@ -22,7 +22,7 @@ export const uiCopy = {
     greeting: { es: "Hola, soy", en: "Hi, I'm" },
     primaryAction: { es: "Trabajemos juntos", en: "Let's work together" },
     secondaryAction: { es: "Ver proyectos", en: "View projects" },
-    resumeAction: { es: "Descargar CV", en: "Download CV" },
+    resumeAction: { es: "Ver CV", en: "View CV" },
     scrollHint: { es: "Desliza para explorar", en: "Scroll to explore" },
   },
 
