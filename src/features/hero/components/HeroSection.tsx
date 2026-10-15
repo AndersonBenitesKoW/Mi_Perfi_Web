@@ -5,6 +5,7 @@ import { profile } from "@/content/profile";
 import { uiCopy } from "@/content/ui-copy";
 import { useTranslate } from "@/i18n/LanguageProvider";
 import { ActionLink } from "@/shared/components/ActionButton";
+import { CvViewer } from "@/shared/components/CvViewer";
 import { RevealOnScroll } from "@/shared/components/RevealOnScroll";
 import { CareerMetrics } from "./CareerMetrics";
 import { RotatingRole } from "./RotatingRole";
@@ -62,9 +63,7 @@ export function HeroSection() {
           <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden />
         </ActionLink>
 
-        <ActionLink href={profile.resumeUrl} variant="ghost" target="_blank" rel="noopener noreferrer">
-          {translate(uiCopy.hero.resumeAction)}
-        </ActionLink>
+        <CvViewer />
       </RevealOnScroll>
 
       <RevealOnScroll delayInSeconds={0.2} className="mt-10">

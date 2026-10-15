@@ -6,6 +6,7 @@ import { profile } from "@/content/profile";
 import { uiCopy } from "@/content/ui-copy";
 import { useTranslate } from "@/i18n/LanguageProvider";
 import { ActionLink } from "@/shared/components/ActionButton";
+import { CvViewer } from "@/shared/components/CvViewer";
 import { mergeClassNames } from "@/shared/lib/class-names";
 import { useActiveSection } from "../hooks/useActiveSection";
 import { navigationSections } from "../navigationSections";
@@ -72,15 +73,7 @@ export function SiteHeader() {
         <div className="flex items-center gap-2">
           <LanguageToggle />
 
-          <ActionLink
-            href={profile.resumeUrl}
-            variant="secondary"
-            className="hidden whitespace-nowrap px-4 py-2 text-xs lg:inline-flex"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {translate(uiCopy.hero.resumeAction)}
-          </ActionLink>
+          <CvViewer className="hidden whitespace-nowrap px-4 py-2 text-xs lg:inline-flex" />
 
           <button
             type="button"
