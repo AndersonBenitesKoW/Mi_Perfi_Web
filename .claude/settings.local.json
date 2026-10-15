@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(npm *)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:3212/CV-Anderson-Benites-Yupanqui.pdf\" -UseBasicParsing -Method Head; \"CV -> {0} {1} bytes, {2}\" -f $r.StatusCode, $r.Headers['Content-Length'], $r.Headers['Content-Type'] } catch { \"CV -> ERROR \" + $_.Exception.Message })",
+      "PowerShell(git status --short; Write-Output \"--- REMOTE ---\"; git remote -v; Write-Output \"--- BRANCH ---\"; git branch -vv; Write-Output \"--- TRACKED COUNT ---\"; \\(git ls-files | Measure-Object -Line\\).Lines)",
+      "PowerShell(git check-ignore *)",
+      "PowerShell(git rm *)",
+      "PowerShell(foreach \\($p in @\\(\"robots.txt\",\"sitemap.xml\",\"CV-Anderson-Benites-Yupanqui.pdf\"\\)\\) { try { $r = Invoke-WebRequest -Uri \"https://mi-perfi-web.vercel.app/$p\" -UseBasicParsing; Write-Output \"$p -> $\\($r.StatusCode\\) | $\\($r.Headers['Content-Type']\\) | $\\($r.RawContentLength\\) bytes\"; if \\($p -ne \"CV-Anderson-Benites-Yupanqui.pdf\"\\) { Write-Output $r.Content } } catch { Write-Output \"$p -> ERROR $\\($_.Exception.Message\\)\" } })",
+      "PowerShell(Stop-Job *)",
+      "PowerShell($body = @{ name = \"Prueba de despliegue\"; email = \"andersonbenitesy@gmail.com\"; message = \"Mensaje de prueba automatico para verificar que Resend esta correctamente configurado en produccion. Puedes ignorarlo.\" } | ConvertTo-Json -Compress; try { $r = Invoke-WebRequest -Uri \"https://mi-perfi-web.vercel.app/api/contact\" -Method POST -ContentType \"application/json\" -Body $body -UseBasicParsing; Write-Output \"STATUS: $\\($r.StatusCode\\)\"; Write-Output $r.Content } catch { $s = $_.Exception.Response.StatusCode.value__; Write-Output \"STATUS: $s\"; $sr = New-Object System.IO.StreamReader\\($_.Exception.Response.GetResponseStream\\(\\)\\); Write-Output $sr.ReadToEnd\\(\\) })",
+      "PowerShell(npm run *)"
+    ]
+  }
+}
