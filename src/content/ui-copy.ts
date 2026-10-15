@@ -26,6 +26,13 @@ export const uiCopy = {
     scrollHint: { es: "Desliza para explorar", en: "Scroll to explore" },
   },
 
+  resume: {
+    title: { es: "Curriculum Vitae", en: "Curriculum Vitae" },
+    close: { es: "Cerrar CV", en: "Close CV" },
+    loading: { es: "Cargando CV…", en: "Loading CV…" },
+    escHint: { es: "para cerrar", en: "to close" },
+  },
+
   about: {
     eyebrow: { es: "Sobre mí", en: "About me" },
     title: { es: "Quién hay detrás del código", en: "Who is behind the code" },
